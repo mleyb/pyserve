@@ -3,8 +3,8 @@ import os
 import socket
 
 app = Flask(__name__)
-@app.route("/")
 
+@app.route("/")
 def hello():
     html = "Hello from a Python service on host {hostname}"
     return html.format(hostname=socket.gethostname())
